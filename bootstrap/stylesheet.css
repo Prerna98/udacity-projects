@@ -1,0 +1,13 @@
+
+body 
+{
+	font-family: 'Lato', sans-serif;
+	color: #707704;
+	font-weight:300;
+
+}
+
+hr{
+	background-color: red;
+	height: 10px;
+}

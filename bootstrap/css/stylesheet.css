@@ -1,0 +1,22 @@
+
+body 
+{
+	font-family: 'Lato', sans-serif;
+	color: #2d4c39;
+	font-weight: 300;
+
+}
+
+hr {
+	background-color: #7d97ad;
+	height: 5px;
+}
+h3 {
+	text-align: center;
+}
+#heading {
+	text-align: right;
+}
+#heading2 {
+text-decoration-color: #7d97ad;
+}
