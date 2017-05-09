@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>map</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="col-md-4">
+            <h1>JAIPUR-PINK CITY</h1>
+            <marquee direction="up">
+               <h2>Enter place from following:-</h2>
+            </marquee>
+            <form>
+               <div>
+                  <input type="text" placeholder="locate...."  data-bind="value: find,valueUpdate: 'afterkeydown', event: {keyup: myfunc}">
+               </div>
+            </form>
+            <div>
+               <ol data-bind="foreach:list">
+                  <li data-bind="text:title,visible:appear,click: $parent.click_marker"></li>
+               </ol>
+            </div>
+         </div>
+         <div class="col-md-8">
+            <div id="map"></div>
+         </div>
+      </div>
+   </body>
+   <script src="js/jquery-3.1.1.min.js"></script>
+   <script src="js/lib/knockout-3.2.0.js"></script>
+   <script src="js/app1.js"></script>
+   <script src=
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiVkWKVu5VMJKJM7VKqeSnERXhEy33x0&v&libraries=geometry&v=3&callback=myMap" onerror="err()" async defer></script>
+</html>
